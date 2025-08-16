@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="data-day">
+                <input type="text" id="findPlace" placeholder="search">
+                <button>Find</button>
+                <div class="circle">
+                    <i id="icon-day" class="fa-solid fa-cloud fa-2xl"></i>
+                    <p class="currentPlace">Warsaw</p>
+                    <p class="status">Cloudy</p>
+                    
+                    <h2 class="temp">27°C</h2>
+                    <div>
+                        <p class="wind">Wind: 12 km/h</p>
+                        <p class="pressure">Pressure: 1000 hPa</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="data-week">
+                <h2>Weather for this week</h2>
+                <div class="container-days">
+                    <div class="day" id="monday">
+                        <p class="day-of-the-week">Mon</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-cloud fa-2xl"></i>
+                        </div>
+                        <div class="temp-days">
+                            <p class="tempH">H:25</p>
+                            <p class="tempL">L:20</p>
+                        </div>
+                    </div>
+                    <div class="day" id="monday">
+                        <p class="day-of-the-week">Tue</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-sun fa-2xl"></i>
+                        </div>
+                        <div class="temp-days">
+                            <p class="tempH">H:32</p>
+                            <p class="tempL">L:26</p>
+                        </div>
+                    </div>
+                    <div class="day" id="monday">
+                        <p class="day-of-the-week">Wed</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-cloud-sun-rain fa-2xl"></i>
+                        </div>
+                        <div class="temp-days">
+                            <p class="tempH">H:10</p>
+                            <p class="tempL">L:12</p>
+                        </div>
+                    </div>
+                    <div class="day" id="monday">
+                        <p class="day-of-the-week">Thu</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-cloud-sun-rain fa-2xl"></i>
+                        </div>
+                        <div class="temp-days">
+                            <p class="tempH">H:27</p>
+                            <p class="tempL">L:21</p>
+                        </div>
+                    </div>
+                    <div class="day" id="monday">
+                        <p class="day-of-the-week">Fri</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-cloud-bolt fa-2xl"></i>
+                        </div>
+                        <div class="temp-days">
+                            <p class="tempH">H:20</p>
+                            <p class="tempL">L:14</p>
+                        </div>
+                    </div>
+                    <div class="day" id="monday">
+                        <p class="day-of-the-week">Sat</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-cloud-bolt fa-2xl"></i>
+                        </div>
+                        <div class="temp-days">
+                            <p class="tempH">H:36</p>
+                            <p class="tempL">L:29</p>
+                        </div>
+                    </div>
+                    <div class="day" id="monday">
+                        <p class="day-of-the-week">Sun</p>
+                        <div class="icon">
+                            <i class="fa-solid fa-sun fa-2xl" ></i>
+                        </div>
+                        <div class="temp-days">
+                            <p class="tempH">H:41</p>
+                            <p class="tempL">L:29</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
